@@ -21,16 +21,16 @@ def remove_columns(df):
 
 
 def normalize_columns(df):
-    df['HomeTeam'] = df['HomeTeam'].str.strip()  # removing whitespaces
+    df['HomeTeam'] = df['HomeTeam'].str.strip() 
     df['AwayTeam'] = df['AwayTeam'].str.strip()
 
     df['HomeTeam'] = df['HomeTeam'].str.title()
     df['AwayTeam'] = df['AwayTeam'].str.title()
 
-    df['Date'] = pd.to_datetime(df['Date']) # date to datetime format
+    df['Date'] = pd.to_datetime(df['Date']) 
 
-    df['Weekday'] = df['Date'].dt.weekday # dow between 0 and 6
-    df['Month'] = df['Date'].dt.month # extracting month
+    df['Weekday'] = df['Date'].dt.weekday 
+    df['Month'] = df['Date'].dt.month 
     df['IsWeekend'] = df['Weekday'].isin([5, 6]).astype(int)
 
     df.sort_values(by=['Season', 'MatchWeek', 'Date'], inplace = True)
