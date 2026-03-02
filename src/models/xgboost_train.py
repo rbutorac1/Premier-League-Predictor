@@ -20,8 +20,8 @@ for target in TARGETS:
         n_estimators=300,
         learning_rate=0.05,
         max_depth=5,
-        subsample=0.8,  # percentage of rows seen by each tree (the best generalization)
-        colsample_bytree=0.8,  # percentage of features seen by each tree (reduces correlation)
+        subsample=0.8, 
+        colsample_bytree=0.8,  
         random_state=42,
     )
 
