@@ -74,7 +74,6 @@ Results are derived from a full 20×20 finishing-position probability matrix.
 
 ---
 
-**🧠 Purpose**
 
 This project demonstrates how to combine:
 
@@ -84,3 +83,4 @@ This project demonstrates how to combine:
 * Monte Carlo simulation
 
 into a complete football forecasting framework.
+
